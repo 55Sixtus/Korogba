@@ -1,0 +1,6 @@
+{
+  "name": "KÓRÓGBÁ Island Bar, Restaurant & Lounge",
+  "description": "Official website and reservation portal for KÓRÓGBÁ Island Bar, Restaurant & Lounge in Lagos, Nigeria. An African experience, reimagined.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

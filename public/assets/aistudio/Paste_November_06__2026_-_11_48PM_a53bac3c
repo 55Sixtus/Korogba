@@ -1,0 +1,1074 @@
+# KÓRÓGBÁ ISLAND BAR, RESTAURANT & LOUNGE
+# MASTER OWNER-REVIEW RELEASE, WEBSITE POLISHING, FUNCTIONALITY COMPLETION & VERCEL DEPLOYMENT INSTRUCTION
+
+You are now acting as a senior full-stack software engineer, senior frontend developer, Supabase database engineer, application security engineer, UI/UX designer, quality assurance engineer and Vercel deployment specialist.
+
+You are working on an existing website project for:
+
+**KÓRÓGBÁ Island Bar, Restaurant & Lounge**
+
+Location: Royal Estate 2, Isheri-Igando Road, Lagos, Nigeria.
+
+Slogan: "LAGOS, GET READY FOR A ROYAL EXPERIENCE!"
+
+Brand tagline: "... an african experience, reimagined"
+
+The business website is being developed by Sixtus Tech Hub.
+
+The project already has substantial frontend development, a React application, a Supabase connection, an existing database migration, customer-facing forms, an administrative portal and other implemented components.
+
+Your task is to transform the EXISTING PROJECT into a polished, stable, genuinely functional website that is ready for an owner-review deployment on Vercel.
+
+This is not an instruction to start a new project.
+
+Do not discard the existing implementation.
+
+Do not replace the website with a generic template.
+
+Do not redesign it into a different brand.
+
+Do not create a static mockup.
+
+Do not simulate backend operations.
+
+Do not claim that something works when it has not been verified.
+
+---
+
+# 1. PRIMARY OBJECTIVE
+
+Prepare the existing KÓRÓGBÁ website for presentation to the business owner.
+
+The website must look and behave like a professionally commissioned hospitality website.
+
+It must be:
+
+- Visually sophisticated.
+- Professionally structured.
+- Responsive across desktop, tablet and mobile.
+- Connected to its actual Supabase backend.
+- Free of fake authentication and false success messages.
+- Functionally reliable for the features already presented to visitors.
+- Free of obvious unfinished development artifacts.
+- Configured for deployment on Vercel.
+- Easy to demonstrate to the business owner.
+
+This is an OWNER-REVIEW RELEASE.
+
+The objective is to stabilize and polish the existing scope, not to introduce an unlimited collection of additional features.
+
+Do not spend time implementing unrelated new features, speculative business systems or expensive integrations that are outside the existing website scope.
+
+Preserve remaining advanced development work for a later approved development phase.
+
+However, every existing feature that is presented as operational must actually work.
+
+---
+
+# 2. CRITICAL PROJECT PRESERVATION RULES
+
+Before making changes:
+
+1. Inspect the entire existing project.
+2. Identify all components and their dependencies.
+3. Inspect the existing Supabase client.
+4. Inspect the existing Supabase service layer.
+5. Inspect database migration files.
+6. Inspect authentication and admin authorization.
+7. Identify mock data, fake success handlers and unfinished operations.
+8. Identify existing styles, fonts, images and design components.
+
+Make a clear internal implementation plan.
+
+Then work incrementally.
+
+Do not delete or overwrite working components without a valid technical reason.
+
+Do not remove existing functionality while improving the design.
+
+Do not replace real Supabase operations with local arrays, hardcoded objects or browser storage.
+
+Do not invent successful backend responses.
+
+Do not generate fake reservations, fake enquiries, fake customer reviews or fake business statistics.
+
+Do not introduce new dependencies unless they provide a real benefit.
+
+Maintain TypeScript type safety.
+
+Preserve the existing project architecture wherever practical.
+
+---
+
+# 3. VISUAL DESIGN AND BRAND POLISHING
+
+The existing website must receive a professional design refinement.
+
+The visual direction is luxury African hospitality with a refined contemporary identity.
+
+Maintain the established visual language:
+
+- Deep charcoal and black.
+- Restrained metallic gold.
+- Silver and warm ivory accents.
+- Elegant typography.
+- Strong editorial image compositions.
+- Authentic venue photography.
+- Thoughtful whitespace.
+- Consistent spacing.
+- Carefully balanced content widths.
+
+Continue using the established Cinzel heading direction and Plus Jakarta Sans body typography where already configured.
+
+Do not introduce random fonts.
+
+## Design quality requirements
+
+The website must not look like:
+
+- A generic AI-generated website.
+- A basic restaurant template.
+- A generic SaaS dashboard.
+- A collection of repetitive cards.
+- An unfinished developer project.
+- An ordinary HTML landing page with decorative gold gradients.
+
+Avoid:
+
+- Excessive gold.
+- Excessive gradients.
+- Unnecessary glassmorphism.
+- Oversized decorative icons.
+- Random floating decorations.
+- Excessive rounded cards.
+- Fake luxury imagery.
+- Generic stock restaurant photographs.
+- AI-generated sparkle, wand, robot or Gemini-style decorations.
+
+Use refined visual hierarchy, premium spacing, balanced typography and professional image treatments.
+
+Every section should have a deliberate visual purpose.
+
+## Homepage
+
+Polish:
+
+- Navigation bar.
+- Hero section.
+- Brand identity.
+- Main calls to action.
+- About/story introduction.
+- Menu preview.
+- Venue experience section.
+- Gallery.
+- Events.
+- Reservation invitation.
+- Contact information.
+- Footer.
+
+Ensure that the homepage flows naturally from one section to another.
+
+Avoid excessive repetition.
+
+The hero section must communicate the brand immediately.
+
+Use the genuine KÓRÓGBÁ logo and authentic venue photographs.
+
+Do not represent inspiration photographs as actual photographs of the venue.
+
+## Responsive design
+
+Test:
+
+- Small mobile screens.
+- Standard mobile screens.
+- Tablets.
+- Laptops.
+- Large desktop screens.
+
+Ensure:
+
+- No horizontal overflow.
+- No clipped text.
+- No overlapping buttons.
+- No broken navigation.
+- No inaccessible mobile controls.
+- No distorted venue images.
+- No unusable forms.
+- No footer overflow.
+
+The website must look intentionally designed at every viewport size.
+
+---
+
+# 4. BUSINESS INFORMATION ACCURACY
+
+Preserve verified business information.
+
+Business name:
+
+KÓRÓGBÁ Island Bar, Restaurant & Lounge.
+
+Address:
+
+Royal Estate 2, Isheri-Igando Road, Lagos, Nigeria.
+
+Slogan:
+
+"LAGOS, GET READY FOR A ROYAL EXPERIENCE!"
+
+Official phone number supplied:
+
++234 903 281 0235.
+
+Instagram:
+
+https://www.instagram.com/korogbaisland/
+
+TikTok:
+
+https://www.tiktok.com/@korogba.island
+
+Google Maps:
+
+https://maps.app.goo.gl/UktYHjCdHUgXsqZV9
+
+Opening hours:
+
+- Monday: Open 24 hours.
+- Tuesday: Open 24 hours.
+- Wednesday: Open 24 hours.
+- Thursday: Closed.
+- Friday: Open 24 hours.
+- Saturday: Open 24 hours.
+- Sunday: Open 24 hours.
+
+Do not display Thursday as open.
+
+Do not invent additional telephone numbers.
+
+Do not invent hotel or accommodation facilities.
+
+Do not invent rooftop facilities, waterfront views, lagoon views, VIP zones, dining pavilions or any other unverified venue features.
+
+Do not invent menu prices, customer reviews, awards, event schedules or promotional claims.
+
+Where information has not been supplied, use a sensible editable content structure or omit the claim.
+
+---
+
+# 5. SUPABASE CONNECTION AND BACKEND STABILIZATION
+
+The approved architecture is:
+
+- React.
+- TypeScript.
+- Vite.
+- Supabase PostgreSQL.
+- Supabase Auth.
+- Supabase Row Level Security.
+- Supabase Storage.
+
+Continue using the existing Supabase project.
+
+Do not create another Supabase project.
+
+Do not switch to Firebase.
+
+Do not reintroduce Google Sheets as the primary database.
+
+Do not rebuild the backend in Google Apps Script.
+
+Use the existing project configuration and environment variables:
+
+VITE_SUPABASE_URL
+
+VITE_SUPABASE_ANON_KEY
+
+Use the public publishable/anon key in the browser only.
+
+NEVER expose:
+
+- Supabase service_role keys.
+- Database passwords.
+- Private API secrets.
+- Administrative access tokens.
+- Other privileged credentials.
+
+Do not print credentials in the audit or completion report.
+
+## Supabase client
+
+Inspect src/lib/supabase.ts.
+
+Ensure the application uses one properly initialized Supabase client.
+
+Remove unnecessary duplicate client initialization.
+
+Ensure the service layer imports and uses the shared client.
+
+Implement consistent error handling.
+
+Do not hide database errors.
+
+Do not return fabricated success responses.
+
+Do not use fake in-memory IDs for failed operations.
+
+---
+
+# 6. CRITICAL AUTHENTICATION CORRECTIONS
+
+The existing audit identified hardcoded password fallback checks.
+
+Remove ALL simulated or hardcoded management password branches.
+
+Specifically eliminate:
+
+korogba2026
+
+royal1980
+
+These credentials must never grant access.
+
+The only management login mechanism should be legitimate Supabase Auth authentication followed by an actual database role check.
+
+Ensure:
+
+- Valid credentials are authenticated by Supabase.
+- Invalid credentials are rejected.
+- Unauthorized users cannot enter the admin portal.
+- Admin permissions are checked against the database.
+- Manager permissions are checked against the database.
+- Staff permissions are appropriately restricted.
+- Session restoration works.
+- Logout works.
+- Invalid or expired sessions are handled correctly.
+
+Do not trust a manually created sessionStorage token as proof of authentication.
+
+Remove redundant fake token mechanisms.
+
+Use the Supabase SDK's actual authentication session.
+
+Do not introduce a false preview login.
+
+Do not create automatic administrator privileges for newly registered users.
+
+Do not allow a public user to promote themselves to admin.
+
+If an initial administrator has not been securely provisioned, do not invent an account or silently elevate an existing user.
+
+Report the exact required administrative setup step.
+
+---
+
+# 7. DATABASE AND RLS SAFETY
+
+Inspect the existing migration:
+
+supabase/migrations/20261105000000_korogba_schema.sql
+
+The existing planned database tables include:
+
+- profiles
+- reservations
+- event_enquiries
+- menu_categories
+- menu_items
+- events
+- gallery
+- business_settings
+
+Do not blindly execute destructive SQL.
+
+Do not drop existing production tables.
+
+Do not truncate business data.
+
+Do not reset the Supabase project.
+
+Review the existing migration and correct actual issues where necessary.
+
+Pay particular attention to the following.
+
+## Administrator bootstrap
+
+Inspect the first-administrator insertion policy.
+
+A policy that allows insertion while no profile exists must not allow an arbitrary authenticated visitor to claim the first administrator account.
+
+The bootstrap must be controlled and must not remain available as a public privilege-escalation route.
+
+Ensure profile IDs match the authenticated user where appropriate.
+
+## Role protection
+
+Prevent unauthorized role changes.
+
+A non-admin user must not be able to change their own role or another user's role.
+
+Do not rely solely on frontend restrictions.
+
+## SECURITY DEFINER functions
+
+Inspect every SECURITY DEFINER function.
+
+Use an explicit fixed search_path.
+
+Restrict function execution privileges appropriately.
+
+Inspect function ownership and grants.
+
+Do not assume a fixed search_path alone is sufficient.
+
+## Public reservations
+
+Visitors should be able to submit legitimate reservation requests.
+
+They must not be able to read private reservation records.
+
+They must not be able to update reservation statuses.
+
+They must not be able to insert a reservation as already confirmed or completed.
+
+The database must enforce the initial pending state.
+
+## Event enquiries
+
+Visitors may submit event enquiries.
+
+They must not be able to read private customer enquiries or modify staff statuses.
+
+Initial event enquiry status must be controlled by the database.
+
+## Public content
+
+Visitors should be able to read only published menu items, events and gallery records.
+
+Draft or unpublished content must remain protected.
+
+## Business settings
+
+Only public business settings should be exposed to anonymous visitors.
+
+Private management settings must remain private.
+
+## Staff permissions
+
+Use explicit role-based permissions.
+
+Do not automatically grant all staff the same permissions as administrators.
+
+If the current project has no complete staff permission system, preserve the safest existing permissions and report the remaining limitation rather than silently expanding access.
+
+## Database verification
+
+If the actual Supabase dashboard or database is inaccessible, state that live verification is unavailable.
+
+Do not claim that a migration has executed merely because its SQL file exists.
+
+---
+
+# 8. RESERVATION FUNCTIONALITY
+
+The public reservation form must perform a genuine database operation.
+
+Inspect ReservationModal.tsx and createReservation().
+
+Correct the false-success fallback.
+
+If Supabase fails:
+
+- Return a genuine error.
+- Do not generate a synthetic reservation ID.
+- Do not display a successful reservation message.
+- Give the customer a helpful error message.
+- Provide the business telephone number as an alternative contact method.
+
+If Supabase succeeds:
+
+- Store the reservation.
+- Obtain the real database record ID.
+- Display an accurate submission acknowledgement.
+- Explain that the request is pending staff confirmation.
+
+The website must never imply that a reservation is confirmed simply because a request was submitted.
+
+Validate:
+
+- Customer name.
+- Telephone number.
+- Email address where supplied.
+- Date.
+- Time.
+- Guest count.
+- Seating preference where supported.
+- Special requests.
+
+Keep the form usable on mobile.
+
+Ensure loading states prevent duplicate submissions.
+
+Do not expose private customer information.
+
+Add appropriate anti-abuse measures without making the form unnecessarily difficult for legitimate visitors.
+
+A client-side cooldown or honeypot is supplemental protection, not a substitute for server-side validation and appropriate rate limiting.
+
+If a secure anti-abuse service is not configured, clearly identify this as an outstanding production requirement.
+
+---
+
+# 9. PRIVATE EVENT ENQUIRIES
+
+Ensure the existing event enquiry form performs a real Supabase INSERT.
+
+Validate all supplied fields.
+
+Show honest success and failure states.
+
+Do not create fake reference numbers.
+
+Do not pretend that an enquiry is a confirmed event booking.
+
+Ensure submitted enquiries can be viewed by authorized management.
+
+Ensure the public cannot read other people's enquiries.
+
+---
+
+# 10. MENU FUNCTIONALITY
+
+The existing menu display must continue working.
+
+Connect it to actual Supabase menu records.
+
+Maintain the current categories and menu structure.
+
+Ensure:
+
+- Category filtering works.
+- Menu search works.
+- Prices display correctly.
+- Empty menu categories are handled gracefully.
+- Unpublished items remain hidden.
+- Loading and error states are professional.
+- Mobile menu layouts work.
+
+The management portal must perform genuine operations where controls are presented.
+
+Implement actual database updates for existing menu editing and deletion controls.
+
+Do not let a Delete button merely remove an item from React state.
+
+Do not introduce invented dishes or prices.
+
+If the database contains no records, do not silently represent invented items as verified live business menu items.
+
+Use an honest empty-state or clearly marked preview content where necessary.
+
+---
+
+# 11. EVENTS FUNCTIONALITY
+
+Ensure the public events section reads published events from Supabase.
+
+Maintain the existing design.
+
+Do not advertise unverified dates or recurring events as confirmed events.
+
+Ensure admin controls actually perform the appropriate database operations.
+
+If event editing, publishing or deletion controls are presented, they must perform real operations.
+
+Do not simply filter local component state.
+
+Handle loading, empty and error states correctly.
+
+---
+
+# 12. GALLERY AND MEDIA
+
+The current gallery uses static images.
+
+Preserve the genuine venue photographs and existing presentation quality.
+
+Implement dynamic gallery loading from the Supabase gallery table where feasible within this release.
+
+Inspect the existing korogba-media storage bucket.
+
+Do not assume the bucket exists merely because its SQL definition has been written.
+
+Verify the actual bucket configuration where access is available.
+
+For public visitors:
+
+- Allow viewing intentionally published images.
+
+For authorized staff:
+
+- Allow only permitted upload, update and deletion operations.
+
+Add appropriate MIME type and file size restrictions.
+
+Recommended image formats:
+
+- JPEG.
+- PNG.
+- WebP.
+
+Recommended maximum upload size:
+
+5 MB per image.
+
+Ensure uploaded media records reference the correct Storage object or URL.
+
+If a storage bucket or its permissions are not configured, do not fabricate upload success.
+
+If the full admin upload workflow is outside the safe scope of this release, keep the public gallery working with authentic venue images and report the remaining admin upload functionality accurately.
+
+Never represent generic inspiration imagery as an actual venue photograph.
+
+---
+
+# 13. ADMINISTRATIVE PORTAL
+
+Polish the existing AdminPortal.tsx without destroying its current structure.
+
+The portal should look professional, consistent and usable.
+
+Inspect all displayed controls.
+
+Every button must have a real action.
+
+Prioritize:
+
+- Secure authentication.
+- Reservation listing.
+- Reservation status updates.
+- Event enquiry listing.
+- Menu management operations.
+- Event management operations.
+- Business settings where already implemented.
+
+Correct all local-only delete operations.
+
+Use genuine Supabase database operations.
+
+Ensure that database failures are communicated honestly.
+
+Do not show fabricated analytics.
+
+Do not display synthetic customer records.
+
+Do not create fake reservation counts.
+
+Do not show success notifications when a database update fails.
+
+If a control is not implemented, remove its false operational appearance or clearly identify it as unavailable.
+
+Do not weaken RLS to make the dashboard work.
+
+Do not bypass authorization for convenience.
+
+---
+
+# 14. LEGACY GOOGLE APPS SCRIPT CLEANUP
+
+The project is migrating away from Google Apps Script and Google Sheets.
+
+Inspect remaining legacy files:
+
+- /gas/
+- GasDeveloperModal.tsx
+- GAS_FILES data in mockData.ts
+- Any unused Google Apps Script service code.
+- Any outdated footer architecture claims.
+
+Remove obsolete visible branding, especially:
+
+"Powered by Google Apps Script & Google Sheets architecture."
+
+Replace it with an appropriate KÓRÓGBÁ copyright statement.
+
+However:
+
+Do not delete legacy backend source files blindly.
+
+First inspect whether any active frontend component or build process still imports them.
+
+Remove obsolete dependencies only when safe.
+
+Preserve a recoverable copy or use version control.
+
+Do not delete genuine business photography or useful design assets during cleanup.
+
+---
+
+# 15. NAVIGATION, CONTACT AND EXTERNAL LINKS
+
+Ensure that:
+
+- Main navigation links work.
+- Mobile navigation works.
+- Reservation calls to action open the real reservation form.
+- Telephone links use the correct supplied business number.
+- Google Maps link opens the supplied location.
+- Instagram link works.
+- TikTok link works.
+- Contact links are correct.
+- Footer links work.
+- All modal close buttons work.
+- Escape-key behavior works where appropriate.
+- Direct page navigation and browser refresh work.
+
+Do not create external links to nonexistent booking systems.
+
+Do not claim an external reservation system is integrated when it is not.
+
+---
+
+# 16. PERFORMANCE AND ACCESSIBILITY
+
+Improve the existing implementation without unnecessary rewriting.
+
+Check:
+
+- Image dimensions.
+- Image compression.
+- Lazy loading where appropriate.
+- Font loading.
+- Unnecessary JavaScript.
+- Repeated database requests.
+- React rendering problems.
+- Broken imports.
+- Unused dependencies.
+- TypeScript errors.
+- Accessibility labels.
+- Keyboard navigation.
+- Button contrast.
+- Form labels.
+- Focus states.
+- Reduced-motion preferences.
+
+Maintain a premium visual presentation while ensuring usability.
+
+---
+
+# 17. SEO AND WEBSITE IDENTITY
+
+Prepare professional basic SEO.
+
+Implement or verify:
+
+- Appropriate page title.
+- Meta description.
+- Canonical URL configuration where the final domain is known.
+- Open Graph title.
+- Open Graph description.
+- Social sharing image using an authentic brand image.
+- Favicon using the official logo where appropriate.
+- Semantic heading structure.
+- Descriptive image alt text.
+- Sitemap where appropriate.
+- robots.txt.
+
+Use accurate descriptions of the actual venue.
+
+Do not invent ratings, reviews, awards or claims.
+
+Do not add misleading structured data.
+
+---
+
+# 18. VERCEL DEPLOYMENT PREPARATION
+
+Prepare the existing Vite project for deployment on Vercel.
+
+Do not create a second unrelated application.
+
+Inspect package.json and ensure the project has appropriate scripts.
+
+Expected commands should include:
+
+npm install
+
+npm run build
+
+npm run preview
+
+If a suitable TypeScript checking script exists, retain it.
+
+Ensure the production build works.
+
+## Vercel configuration
+
+Check whether a Vercel configuration file is required.
+
+If the application uses client-side routing, configure appropriate SPA fallback/rewrite behavior so refreshing a nested route does not return a 404.
+
+Do not add unnecessary configuration files.
+
+## Environment variables
+
+The production Vercel project must receive:
+
+VITE_SUPABASE_URL
+
+VITE_SUPABASE_ANON_KEY
+
+Use the correct existing public Supabase configuration.
+
+Do not embed secrets in source files.
+
+Do not include a service_role key in Vercel frontend environment variables.
+
+Do not commit .env files containing credentials.
+
+Ensure .env.example contains only placeholder values.
+
+## Production readiness
+
+Check:
+
+- Build command.
+- Output directory.
+- Node compatibility.
+- Environment variable availability.
+- Routing fallback.
+- Asset paths.
+- HTTPS.
+- Supabase allowed origins and authentication redirect URLs where relevant.
+- Production console errors.
+
+Do not invent a Vercel deployment URL.
+
+Do not claim deployment succeeded unless it actually succeeded.
+
+If you cannot access Vercel or the required account permissions, prepare the project and give exact manual deployment instructions.
+
+---
+
+# 19. TESTING REQUIREMENTS
+
+Perform the available checks.
+
+At minimum:
+
+1. Run TypeScript validation.
+2. Run the production Vite build.
+3. Check all imports.
+4. Check for broken assets.
+5. Check for obsolete GAS references.
+6. Check for hardcoded passwords.
+7. Check for fake success handlers.
+8. Check all visible navigation links.
+9. Check reservation validation.
+10. Check event enquiry validation.
+11. Check the admin login flow.
+12. Check Supabase error handling.
+13. Check mobile layout.
+14. Check tablet layout.
+15. Check desktop layout.
+
+Where browser interaction is available, test the actual flows.
+
+Where database access is available, verify actual records.
+
+Where database access is unavailable, distinguish static inspection from live verification.
+
+Never manufacture test results.
+
+## Security test cases
+
+Test or provide a clear manual procedure for:
+
+- Anonymous visitor reading published menu.
+- Anonymous visitor attempting to read private profiles.
+- Anonymous visitor attempting to read customer reservations.
+- Anonymous visitor attempting to change reservation status.
+- Authenticated ordinary user attempting to change their role.
+- Unauthorized user attempting to access the admin portal.
+- Authorized admin updating menu records.
+- Unauthorized user attempting to upload or delete media.
+
+Do not declare the system secure merely because the website builds successfully.
+
+---
+
+# 20. VISUAL AND FUNCTIONAL QUALITY ASSURANCE
+
+Before declaring the owner-review release complete, inspect the actual rendered website.
+
+Check:
+
+- Hero composition.
+- Typography consistency.
+- Section spacing.
+- Image cropping.
+- Footer design.
+- Navigation.
+- Reservation modal.
+- Event enquiry form.
+- Menu presentation.
+- Gallery presentation.
+- Admin login screen.
+- Admin dashboard.
+- Mobile responsiveness.
+
+Do not make the website more decorative at the expense of professionalism.
+
+Do not introduce unnecessary animation.
+
+Keep interactions smooth, restrained and purposeful.
+
+---
+
+# 21. SCOPE CONTROL
+
+This is an owner-review release, not the final unrestricted development contract.
+
+Complete and stabilize the features that are already part of the existing website.
+
+Do not expand the project with unrelated features.
+
+Do not invent:
+
+- Payment gateway integrations.
+- Hotel booking systems.
+- Accommodation management.
+- Delivery systems.
+- Loyalty programmes.
+- POS systems.
+- Staff payroll.
+- Advanced CRM.
+- Third-party booking integrations.
+- Unapproved marketing automation.
+
+Do not remove existing core functionality to reduce work.
+
+If a feature cannot be made reliable within the current scope, report it honestly.
+
+Preserve the remaining advanced work for a subsequent approved development phase.
+
+Do not leave a security vulnerability simply because the release is an owner-review version.
+
+Critical authentication, database access and data integrity protections are mandatory even in a review deployment.
+
+---
+
+# 22. REQUIRED FINAL REPORT
+
+After implementation, produce a detailed completion report.
+
+Include:
+
+## A. Changes made
+
+List every file modified, added or removed.
+
+Explain the reason for each significant change.
+
+## B. Visual improvements
+
+Describe the actual improvements to the website design.
+
+## C. Functionality
+
+For each feature, report:
+
+- Working and tested.
+- Implemented but untested.
+- Partially working.
+- Not implemented.
+- Blocked by external access or configuration.
+
+## D. Supabase status
+
+Report actual verification of:
+
+- Connection.
+- Database tables.
+- RLS.
+- Authentication.
+- Reservation submission.
+- Event enquiry submission.
+- Menu operations.
+- Events operations.
+- Gallery operations.
+- Storage permissions.
+
+## E. Security
+
+Report remaining vulnerabilities and their severity.
+
+Do not hide critical findings.
+
+## F. Build and testing
+
+Provide the actual results of:
+
+npm run build
+
+TypeScript validation.
+
+Available browser tests.
+
+Database tests.
+
+Do not claim success if a command was not run.
+
+## G. Vercel deployment
+
+State whether:
+
+- Project is prepared for Vercel.
+- Required environment variables are identified.
+- Routing is configured.
+- Build succeeded.
+- Deployment actually succeeded.
+
+If deployment requires manual action, provide exact steps.
+
+## H. Remaining development work
+
+List what has intentionally been left for the next development phase.
+
+Separate essential launch blockers from optional future enhancements.
+
+---
+
+# 23. FINAL INSTRUCTION
+
+Your goal is to produce a polished, genuine, functioning KÓRÓGBÁ website that can be deployed to Vercel and confidently presented to the business owner.
+
+This is an existing project with substantial work already completed.
+
+Respect that work.
+
+Preserve the established brand.
+
+Make the current features reliable.
+
+Fix critical defects.
+
+Improve the design.
+
+Prepare deployment.
+
+Do not substitute mockups for real operations.
+
+Do not pretend that missing backend features are working.
+
+Do not expose credentials.
+
+Do not destroy existing data.
+
+Do not claim success without evidence.
+
+Work carefully, systematically and professionally.
+
+At the end, provide the exact Vercel deployment steps required from the project owner/developer and identify every remaining task that requires actual Supabase or Vercel dashboard access.
+
+The result must be worthy of presentation to the management of KÓRÓGBÁ Island Bar, Restaurant & Lounge.
