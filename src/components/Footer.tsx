@@ -107,9 +107,11 @@ export default function Footer() {
 
         </div>
 
-        <div className="pt-8 border-t border-neutral-800 text-center text-xs text-neutral-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-neutral-800 text-center text-xs text-neutral-400 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p>© {new Date().getFullYear()} KÓRÓGBÁ Island Bar, Restaurant & Lounge. All rights reserved.</p>
-          <p className="text-neutral-400">Royal Estate 2, Isheri-Igando Road, Lagos, Nigeria</p>
+          <p className="text-[#dfba73] font-medium tracking-wide">
+            Website Developed by Sixtus Tech Hub | 08120678052
+          </p>
         </div>
 
       </div>

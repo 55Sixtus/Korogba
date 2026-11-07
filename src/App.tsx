@@ -6,6 +6,7 @@ import MenuSection from './components/MenuSection';
 import ExperienceSection from './components/ExperienceSection';
 import GallerySection from './components/GallerySection';
 import EventsSection from './components/EventsSection';
+import FaqSection from './components/FaqSection';
 import LocationContact from './components/LocationContact';
 import ReservationModal from './components/ReservationModal';
 import AdminPortal from './components/AdminPortal';
@@ -83,6 +84,9 @@ export default function App() {
 
       {/* Events & Private Booking */}
       <EventsSection />
+
+      {/* Frequently Asked Questions */}
+      <FaqSection />
 
       {/* Location, Hours & Contact */}
       <LocationContact />

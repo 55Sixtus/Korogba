@@ -25,6 +25,7 @@ export default function Navbar({ onOpenReservation, onOpenAdmin }: NavbarProps) 
     { name: 'Experiences', href: '#experiences' },
     { name: 'Events', href: '#events' },
     { name: 'Gallery', href: '#gallery' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#location' },
   ];
 

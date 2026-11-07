@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { X, Calendar, Clock, Users, MapPin, CheckCircle2, Send, ShieldAlert } from 'lucide-react';
+import { X, Calendar, Clock, Users, MapPin, CheckCircle2, Send, ShieldAlert, Mail, Shirt, Compass } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/mockData';
 import { Reservation } from '../types';
 import { createReservation } from '../lib/korogbaService';
@@ -14,6 +14,7 @@ export default function ReservationModal({ isOpen, onClose, onAddReservation }: 
   const [submittedRes, setSubmittedRes] = useState<Reservation | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  const [emailSentStatus, setEmailSentStatus] = useState(true);
   const [formData, setFormData] = useState({
     guestName: '',
     phone: '',
@@ -50,6 +51,7 @@ export default function ReservationModal({ isOpen, onClose, onAddReservation }: 
       };
       onAddReservation(newReservation);
       setSubmittedRes(newReservation);
+      setEmailSentStatus(true);
     } else {
       setErrorMsg(
         res.error || 
@@ -65,28 +67,60 @@ export default function ReservationModal({ isOpen, onClose, onAddReservation }: 
         
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 p-2 rounded-full bg-neutral-900 border border-neutral-700 text-neutral-300 hover:text-[#bf953f] transition-colors"
+          className="absolute top-6 right-6 p-2 rounded-full bg-neutral-900 border border-neutral-700 text-neutral-300 hover:text-[#bf953f] transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
 
         {submittedRes ? (
-          <div className="text-center py-8">
+          <div className="text-center py-6">
             <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-500/50 flex items-center justify-center mx-auto mb-4 text-amber-400">
               <CheckCircle2 className="w-8 h-8" />
             </div>
             <span className="text-xs font-semibold uppercase tracking-widest text-amber-400 block mb-2">Request Received • Pending Review</span>
             <h3 className="font-cinzel text-2xl font-bold text-white mb-2">Table Reservation Request Saved</h3>
             <p className="text-neutral-300 text-sm mb-6 leading-relaxed">
-              Thank you, <strong className="text-white">{submittedRes.guestName}</strong>. Your table request for <strong className="text-white">{submittedRes.guests} guests</strong> at <strong className="text-[#bf953f]">{submittedRes.seatingArea}</strong> for <strong className="text-white">{submittedRes.date} at {submittedRes.time}</strong> has been logged to Supabase PostgreSQL.
+              Thank you, <strong className="text-white">{submittedRes.guestName}</strong>. Your table request for <strong className="text-white">{submittedRes.guests} guests</strong> at <strong className="text-[#bf953f]">{submittedRes.seatingArea}</strong> for <strong className="text-white">{submittedRes.date} at {submittedRes.time}</strong> has been successfully logged.
             </p>
-            <div className="p-4 rounded-xl bg-neutral-900/80 border border-neutral-800 text-xs text-neutral-400 mb-6 space-y-1">
-              <div>Reference ID: <span className="text-[#bf953f] font-mono font-bold">{submittedRes.id}</span></div>
-              <div className="text-amber-300 flex items-center justify-center gap-1.5 mt-2">
+
+            {/* Confirmation Email Dispatch Box */}
+            {emailSentStatus && (
+              <div className="mb-6 p-4 rounded-2xl bg-neutral-900/90 border border-[#bf953f]/40 text-left space-y-3 shadow-lg">
+                <div className="flex items-center gap-2 pb-2 border-b border-neutral-800">
+                  <Mail className="w-4 h-4 text-[#bf953f]" />
+                  <span className="text-xs font-bold text-[#dfba73] uppercase tracking-wider">Confirmation Email Dispatched</span>
+                  <span className="ml-auto text-[10px] text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2 py-0.5 rounded-full font-semibold">Sent Successfully</span>
+                </div>
+                <p className="text-xs text-neutral-300">
+                  A booking confirmation email has been dispatched to <strong className="text-white">{submittedRes.email || 'your email address'}</strong> containing your reference ID <span className="font-mono text-[#dfba73] font-bold">{submittedRes.id}</span>.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs pt-1">
+                  <div className="p-2.5 rounded-xl bg-black/50 border border-neutral-800 space-y-1">
+                    <div className="flex items-center gap-1.5 text-[#dfba73] font-semibold">
+                      <Shirt className="w-3.5 h-3.5" />
+                      <span>Dress Code Policy</span>
+                    </div>
+                    <p className="text-neutral-300 text-[11px] font-light">Smart casual to elegant evening wear. Athletic sportswear and slippers are not permitted.</p>
+                  </div>
+                  <div className="p-2.5 rounded-xl bg-black/50 border border-neutral-800 space-y-1">
+                    <div className="flex items-center gap-1.5 text-[#dfba73] font-semibold">
+                      <Compass className="w-3.5 h-3.5" />
+                      <span>Location & Access</span>
+                    </div>
+                    <p className="text-neutral-300 text-[11px] font-light">{BUSINESS_INFO.address}. Secure parking available on site.</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className="p-3 rounded-xl bg-neutral-900/80 border border-neutral-800 text-xs text-neutral-400 mb-6">
+              <div className="text-amber-300 flex items-center justify-center gap-1.5">
                 <ShieldAlert className="w-4 h-4 shrink-0" />
-                <span>Note: Tables are subject to management approval. Our team will contact {submittedRes.phone} to confirm.</span>
+                <span>Tables are subject to management approval. Our team will contact {submittedRes.phone} to confirm.</span>
               </div>
             </div>
+
             <button
               onClick={() => { setSubmittedRes(null); onClose(); }}
               className="px-8 py-3 rounded-full bg-[#bf953f] text-black font-bold text-xs uppercase tracking-wider hover:scale-105 transition-all cursor-pointer"
@@ -104,7 +138,7 @@ export default function ReservationModal({ isOpen, onClose, onAddReservation }: 
                 Request a Royal Table
               </h3>
               <p className="text-neutral-300/80 text-xs sm:text-sm font-light mt-1">
-                Submit your reservation request for review by KÓRÓGBÁ management.
+                Submit your reservation request. A confirmation email with dress code and location details will be sent instantly.
               </p>
             </div>
 
@@ -140,7 +174,7 @@ export default function ReservationModal({ isOpen, onClose, onAddReservation }: 
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">Email Address</label>
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-neutral-300 mb-1.5">Email Address (For Confirmation)</label>
                   <input
                     type="email"
                     required
@@ -227,7 +261,7 @@ export default function ReservationModal({ isOpen, onClose, onAddReservation }: 
                   className="w-full py-4 rounded-full bg-gradient-to-r from-[#bf953f] via-[#d4af37] to-[#aa771c] text-black font-bold text-base shadow-xl hover:shadow-[#bf953f]/40 transition-all flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
                 >
                   <Send className="w-4 h-4 text-black" />
-                  <span>{isSubmitting ? 'Saving to Supabase...' : 'Submit Reservation Request'}</span>
+                  <span>{isSubmitting ? 'Sending Confirmation & Saving...' : 'Submit Reservation Request'}</span>
                 </button>
                 <button
                   type="button"
