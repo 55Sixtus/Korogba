@@ -49,6 +49,13 @@ export default function App() {
     }
   };
 
+  const handleRefreshReservations = async () => {
+    const data = await fetchReservations();
+    if (data) {
+      setReservations(data);
+    }
+  };
+
   const handleExploreMenu = () => {
     const menuEl = document.getElementById('menu');
     if (menuEl) {
@@ -107,6 +114,7 @@ export default function App() {
         reservations={reservations}
         onUpdateStatus={handleUpdateStatus}
         onDeleteReservation={handleDeleteReservation}
+        onRefreshReservations={handleRefreshReservations}
       />
     </div>
   );

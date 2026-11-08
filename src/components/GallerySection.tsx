@@ -1,9 +1,29 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { GALLERY_IMAGES } from '../data/mockData';
 import { Maximize2, X } from 'lucide-react';
+import { fetchGallery } from '../lib/korogbaService';
+import { GalleryItem } from '../types';
 
 export default function GallerySection() {
-  const [selectedImage, setSelectedImage] = useState<typeof GALLERY_IMAGES[0] | null>(null);
+  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>(
+    GALLERY_IMAGES.map((img, idx) => ({
+      id: img.id || `gal-${idx}`,
+      title: img.title,
+      category: img.category,
+      image: img.image,
+      description: img.description,
+      is_published: true
+    }))
+  );
+  const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
+
+  useEffect(() => {
+    fetchGallery().then(items => {
+      if (items && items.length > 0) {
+        setGalleryItems(items);
+      }
+    });
+  }, []);
 
   return (
     <section id="gallery" className="py-24 bg-[#0a0a0e] relative">
@@ -24,7 +44,7 @@ export default function GallerySection() {
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {GALLERY_IMAGES.map((img) => (
+          {galleryItems.map((img) => (
             <div
               key={img.id}
               onClick={() => setSelectedImage(img)}
@@ -50,9 +70,11 @@ export default function GallerySection() {
                 <h3 className="font-cinzel text-xl font-bold text-white mb-2">
                   {img.title}
                 </h3>
-                <p className="text-neutral-300 text-xs font-light line-clamp-2">
-                  {img.description}
-                </p>
+                {img.description && (
+                  <p className="text-neutral-300 text-xs font-light line-clamp-2">
+                    {img.description}
+                  </p>
+                )}
               </div>
             </div>
           ))}
@@ -66,7 +88,7 @@ export default function GallerySection() {
           <div className="relative max-w-4xl w-full glass-card rounded-2xl p-6 border border-[#bf953f]/40">
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 p-2 rounded-full bg-neutral-900 border border-neutral-700 text-neutral-300 hover:text-[#bf953f] transition-colors z-10"
+              className="absolute top-4 right-4 p-2 rounded-full bg-neutral-900 border border-neutral-700 text-neutral-300 hover:text-[#bf953f] transition-colors z-10 cursor-pointer"
             >
               <X className="w-6 h-6" />
             </button>
@@ -85,9 +107,11 @@ export default function GallerySection() {
             <h3 className="font-cinzel text-2xl font-bold text-white mb-2">
               {selectedImage.title}
             </h3>
-            <p className="text-neutral-300 text-sm font-light">
-              {selectedImage.description}
-            </p>
+            {selectedImage.description && (
+              <p className="text-neutral-300 text-sm font-light">
+                {selectedImage.description}
+              </p>
+            )}
           </div>
         </div>
       )}

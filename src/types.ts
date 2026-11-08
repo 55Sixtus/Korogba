@@ -8,6 +8,7 @@ export interface MenuItem {
   image?: string;
   badge?: string;
   popular?: boolean;
+  is_available?: boolean;
 }
 
 export interface EventItem {
@@ -18,6 +19,7 @@ export interface EventItem {
   description: string;
   image: string;
   category: string;
+  is_published?: boolean;
 }
 
 export interface Reservation {
@@ -31,6 +33,7 @@ export interface Reservation {
   seatingArea: string;
   specialRequests?: string;
   status: 'confirmed' | 'pending' | 'completed' | 'declined' | 'cancelled';
+  staffNotes?: string;
   createdAt: string;
 }
 
@@ -43,5 +46,28 @@ export interface EventInquiry {
   guestCount: number;
   preferredDate: string;
   details: string;
+  status?: 'new' | 'contacted' | 'booked' | 'archived';
   createdAt: string;
+}
+
+export interface GalleryItem {
+  id: string;
+  title: string;
+  category: string;
+  image: string;
+  description?: string;
+  is_published?: boolean;
+}
+
+export interface BusinessSettings {
+  id?: string;
+  name: string;
+  tagline?: string;
+  slogan?: string;
+  address: string;
+  phone: string;
+  instagram?: string;
+  tiktok?: string;
+  googleMaps?: string;
+  is_accepting_reservations?: boolean;
 }

@@ -35,19 +35,19 @@ export default function ReservationModal({ isOpen, onClose, onAddReservation }: 
 
     const res = await createReservation(formData);
 
-    if (res.success && res.data) {
+    if (res.success) {
       const newReservation: Reservation = {
-        id: res.data.id,
-        guestName: res.data.guest_name,
-        phone: res.data.phone,
-        email: res.data.email,
-        date: res.data.date,
-        time: res.data.time,
-        guests: res.data.guests,
-        seatingArea: res.data.seating_area,
-        specialRequests: res.data.special_requests || '',
-        status: res.data.status,
-        createdAt: res.data.created_at
+        id: `REQ-${Date.now().toString().slice(-6)}`,
+        guestName: formData.guestName,
+        phone: formData.phone,
+        email: formData.email,
+        date: formData.date,
+        time: formData.time,
+        guests: formData.guests,
+        seatingArea: formData.seatingArea,
+        specialRequests: formData.specialRequests || '',
+        status: 'pending',
+        createdAt: new Date().toISOString()
       };
       onAddReservation(newReservation);
       setSubmittedRes(newReservation);

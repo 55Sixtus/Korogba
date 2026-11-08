@@ -16,6 +16,103 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Restaurant & Local Business Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Restaurant", "BarOrPub"],
+      "@id": "https://korogba.vercel.app/#restaurant",
+      "name": "KÓRÓGBÁ Island Bar, Restaurant & Lounge",
+      "alternateName": "Kórógbá Island Lounge",
+      "description": "Lagos premier royal sanctuary of exquisite African dining, artisanal mixology, exotic shisha, and high-energy nightlife located at Royal Estate 2, Isheri-Igando Road.",
+      "url": "https://korogba.vercel.app/",
+      "telephone": "+2349032810235",
+      "priceRange": "₦₦₦",
+      "servesCuisine": [
+        "African",
+        "Nigerian",
+        "Grills & Suya",
+        "Artisanal Cocktails",
+        "Exotic Shisha"
+      ],
+      "acceptsReservations": "True",
+      "menu": "https://korogba.vercel.app/#menu",
+      "image": [
+        "https://korogba.vercel.app/assets/aistudio/image_22442516.png",
+        "https://korogba.vercel.app/assets/aistudio/image_1cd32473.png",
+        "https://korogba.vercel.app/assets/aistudio/image_e1aae617.png",
+        "https://korogba.vercel.app/assets/aistudio/image_f66ec26e.png"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Royal Estate 2, Isheri-Igando Road",
+        "addressLocality": "Isheri / Igando",
+        "addressRegion": "Lagos State",
+        "addressCountry": "NG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 6.5682,
+        "longitude": 3.2505
+      },
+      "hasMap": "https://maps.app.goo.gl/UktYHjCdHUgXsqZV9",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/korogbaisland/",
+        "https://www.tiktok.com/@korogba.island"
+      ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Structured Data (JSON-LD) for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the dress code policy at KÓRÓGBÁ Island Lounge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We operate a smart casual to elegant evening wear dress code. To maintain our royal ambiance, athletic sportswear, gym apparel, and casual slippers/slides are strictly prohibited."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does table reservation work at KÓRÓGBÁ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Table reservations can be made online via our reservation portal or directly via phone at +234 903 281 0235. Reservations are subject to management confirmation. Tables are held for up to 20 minutes past booking time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there secure parking at KÓRÓGBÁ Island Lounge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide secure on-site parking within Royal Estate 2 with professional security personnel on duty 24/7."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are KÓRÓGBÁ opening hours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "KÓRÓGBÁ operates 24 Hours on Monday, Tuesday, Wednesday, Friday, Saturday, and Sunday. We are closed on Thursdays for private maintenance."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
