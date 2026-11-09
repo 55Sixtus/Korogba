@@ -47,7 +47,7 @@ export default function AdminPortal({
 }: AdminPortalProps) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [adminUser, setAdminUser] = useState<{ email?: string; role?: string } | null>(null);
-  const [loginEmail, setLoginEmail] = useState('sixtusgreat@gmail.com');
+  const [loginEmail, setLoginEmail] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
   const [loginError, setLoginError] = useState('');
   const [isLoading, setIsLoading] = useState(false);

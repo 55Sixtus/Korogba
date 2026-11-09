@@ -54,7 +54,7 @@ export default function Story() {
             Our Heritage & Atmosphere
           </span>
           <h2 className="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-6">
-            Where African Heritage Meets <span className="gold-gradient font-cormorant italic font-normal">Modern Luxury</span>
+            Where African Heritage Meets <span className="gold-gradient font-poppins italic font-light">Modern Luxury</span>
           </h2>
           <p className="text-neutral-300/90 text-base sm:text-lg font-light leading-relaxed">
             Located in the heart of Royal Estate 2 along Isheri-Igando Road, <strong className="text-white font-medium">KÓRÓGBÁ Island Bar, Restaurant & Lounge</strong> was conceived as a royal sanctuary for Lagosians seeking an elevated social escape. We fuse rich cultural traditions with contemporary hospitality.

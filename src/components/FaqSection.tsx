@@ -53,7 +53,7 @@ export default function FaqSection() {
             </span>
           </div>
           <h2 className="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-6">
-            Frequently Asked <span className="gold-gradient font-cormorant italic font-normal">Questions</span>
+            Frequently Asked <span className="gold-gradient font-poppins italic font-light">Questions</span>
           </h2>
           <p className="text-neutral-300 text-sm sm:text-base font-light leading-relaxed">
             Everything you need to know about visiting KÓRÓGBÁ Island Bar, Restaurant & Lounge.

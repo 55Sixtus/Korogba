@@ -59,7 +59,7 @@ export default function EventsSection() {
             Nightlife & Private Celebrations
           </span>
           <h2 className="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-6">
-            Events & <span className="gold-gradient font-cormorant italic font-normal">VIP Lockouts</span>
+            Events & <span className="gold-gradient font-poppins italic font-light">VIP Lockouts</span>
           </h2>
           <p className="text-neutral-300/90 text-base sm:text-lg font-light leading-relaxed">
             From Afrobeat Fridays to exclusive private celebrations, experience Lagos nights in royal style.

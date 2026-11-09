@@ -67,7 +67,8 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Tender prime beef strips and chicken skewers marinated in authentic Yaji spice blend, served with toasted peanut crumbs, crisp onions, and fresh tomatoes.',
     price: '₦12,500',
     popular: true,
-    badge: 'Chef Choice'
+    badge: 'Chef Choice',
+    image: '/assets/aistudio/image_970bc4c1.png'
   },
   {
     id: 'f2',
@@ -76,7 +77,8 @@ export const MENU_ITEMS: MenuItem[] = [
     subcategory: 'Grills & Specialties',
     description: 'Fire-roasted diced goat meat tossed in an intensely flavorful, smoky pepper sauce with native herbs and bell peppers.',
     price: '₦10,000',
-    popular: true
+    popular: true,
+    image: '/assets/aistudio/image_970bc4c1.png'
   },
   {
     id: 'f3',
@@ -86,7 +88,8 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Fresh river catfish slow-grilled over hot coals with spicy pepper marinade, served alongside golden fried plantains and rich ata-roho sauce.',
     price: '₦18,000',
     popular: true,
-    badge: 'Best Seller'
+    badge: 'Best Seller',
+    image: '/assets/aistudio/image_970bc4c1.png'
   },
   {
     id: 'f4',
@@ -94,7 +97,8 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'food',
     subcategory: 'Main Courses',
     description: 'Aromatic Nigerian jollof rice cooked in rich prawn stock with fresh jumbo prawns, calamari, crab chunks, and local spices.',
-    price: '₦15,000'
+    price: '₦15,000',
+    image: '/assets/aistudio/image_970bc4c1.png'
   },
   {
     id: 'f5',
@@ -102,7 +106,8 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'food',
     subcategory: 'Grills & Specialties',
     description: 'Juicy, succulent turkey wings fried to a golden crisp and smothered in our signature chef-crafted hot pepper glaze.',
-    price: '₦14,000'
+    price: '₦14,000',
+    image: '/assets/aistudio/image_970bc4c1.png'
   },
   {
     id: 'd1',
@@ -112,7 +117,8 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'A vibrant tropical blend of premium aged rum, passion fruit nectar, fresh lime juice, hibiscus reduction, and crushed mint.',
     price: '₦7,500',
     popular: true,
-    badge: 'Signature'
+    badge: 'Signature',
+    image: '/assets/aistudio/image_1cd32473.png'
   },
   {
     id: 'd2',
@@ -121,7 +127,8 @@ export const MENU_ITEMS: MenuItem[] = [
     subcategory: 'Signature Cocktails',
     description: 'Infused local palm spirit paired with coconut cream, pineapple reduction, and a dusting of grated nutmeg.',
     price: '₦8,000',
-    popular: true
+    popular: true,
+    image: '/assets/aistudio/image_1cd32473.png'
   },
   {
     id: 'd3',
@@ -129,7 +136,8 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'drinks',
     subcategory: 'Beers & Ciders',
     description: 'Choice of chilled Heineken, Star Lager, Gulder, or Stout served crisp from our illuminated display fridges.',
-    price: '₦3,000'
+    price: '₦3,000',
+    image: '/assets/aistudio/image_1cd32473.png'
   },
   {
     id: 'd4',
@@ -138,7 +146,8 @@ export const MENU_ITEMS: MenuItem[] = [
     subcategory: 'Spirits & Champagne',
     description: 'Hennessey VSOP, Martell Blue Swift, or Glenfiddich 12 served with ice bucket, mixers, and dedicated tableside service.',
     price: '₦75,000+',
-    badge: 'VIP Service'
+    badge: 'VIP Service',
+    image: '/assets/aistudio/image_1cd32473.png'
   },
   {
     id: 'd5',
@@ -146,7 +155,8 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'drinks',
     subcategory: 'Mocktails & Juices',
     description: 'The quintessential Nigerian cocktail made with Fanta, Sprite, Angostura bitters, grenadine, cucumber ribbons, and fresh citrus.',
-    price: '₦4,500'
+    price: '₦4,500',
+    image: '/assets/aistudio/image_1cd32473.png'
   },
   {
     id: 's1',
@@ -156,7 +166,8 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Our secret multi-fruit fusion with iced mint finish, smooth smoke output, and fresh fruit bowl option.',
     price: '₦8,500',
     popular: true,
-    badge: 'Top Pick'
+    badge: 'Top Pick',
+    image: '/assets/aistudio/image_e1aae617.png'
   },
   {
     id: 's2',
@@ -164,7 +175,8 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'shisha',
     subcategory: 'Classic Shisha',
     description: 'Traditional rich Bahraini double apple tobacco blended with cooling natural mint leaf.',
-    price: '₦7,000'
+    price: '₦7,000',
+    image: '/assets/aistudio/image_e1aae617.png'
   },
   {
     id: 's3',
@@ -172,7 +184,8 @@ export const MENU_ITEMS: MenuItem[] = [
     category: 'shisha',
     subcategory: 'Exotic Shisha',
     description: 'Sweet juicy blueberry coupled with aromatic Indian pan masala for a deeply satisfying sensory experience.',
-    price: '₦8,000'
+    price: '₦8,000',
+    image: '/assets/aistudio/image_e1aae617.png'
   }
 ];
 

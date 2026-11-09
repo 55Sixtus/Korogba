@@ -12,7 +12,7 @@ export default function LocationContact() {
             Visit The Island
           </span>
           <h2 className="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-6">
-            Location & <span className="gold-gradient font-cormorant italic font-normal">Opening Hours</span>
+            Location & <span className="gold-gradient font-poppins italic font-light">Opening Hours</span>
           </h2>
           <p className="text-neutral-300/90 text-base sm:text-lg font-light leading-relaxed">
             We are ready to welcome you to a royal experience in Lagos. Find us easily or reach out anytime.

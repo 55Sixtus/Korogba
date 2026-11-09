@@ -35,7 +35,7 @@ export default function GallerySection() {
             Visual Atmosphere
           </span>
           <h2 className="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-6">
-            The Kórógbá <span className="gold-gradient font-cormorant italic font-normal">Gallery</span>
+            The Kórógbá <span className="gold-gradient font-poppins italic font-light">Gallery</span>
           </h2>
           <p className="text-neutral-300/90 text-base sm:text-lg font-light leading-relaxed">
             Authentic photography of our royal crest emblem, outdoor pergola bar, indoor cocktail lounge, and Isheri garden terrace.

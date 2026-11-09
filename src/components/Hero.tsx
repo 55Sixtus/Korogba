@@ -54,9 +54,9 @@ export default function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
         </div>
 
         {/* Main Title */}
-        <h1 className="font-cinzel text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-8 leading-tight text-balance drop-shadow-2xl">
+        <h1 className="font-cinzel text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6 sm:mb-8 leading-tight text-balance drop-shadow-2xl">
           An African Experience, <br />
-          <span className="gold-gradient font-cormorant italic font-normal">Reimagined.</span>
+          <span className="gold-gradient font-poppins italic font-light">Reimagined.</span>
         </h1>
 
         {/* Description Container with Changing Animated Background */}

@@ -44,7 +44,7 @@ export default function ExperienceSection() {
             The Pillars of Hospitality
           </span>
           <h2 className="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-6">
-            Designed for <span className="gold-gradient font-cormorant italic font-normal">Royalty</span>
+            Designed for <span className="gold-gradient font-poppins italic font-light">Royalty</span>
           </h2>
           <p className="text-neutral-300/90 text-base sm:text-lg font-light leading-relaxed">
             Every corner of KÓRÓGBÁ Island has been crafted to deliver an unmatched sensory escape in Isheri-Igando.

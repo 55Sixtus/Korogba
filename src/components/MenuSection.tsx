@@ -35,7 +35,7 @@ export default function MenuSection() {
             Royal Culinary Arts
           </span>
           <h2 className="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-6">
-            The Kórógbá <span className="gold-gradient font-cormorant italic font-normal">Curated Menu</span>
+            The Kórógbá <span className="gold-gradient font-poppins italic font-light">Curated Menu</span>
           </h2>
           <p className="text-neutral-300/90 text-base sm:text-lg font-light leading-relaxed">
             Indulge in authentic Nigerian grills, exotic signature cocktails, and premium shisha blends crafted to perfection.
@@ -85,37 +85,55 @@ export default function MenuSection() {
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="glass-card rounded-2xl p-6 border border-neutral-800/80 hover:border-[#dfba73]/40 transition-all duration-300 flex flex-col justify-between group"
+              className="glass-card rounded-2xl overflow-hidden border border-neutral-800/80 hover:border-[#dfba73]/40 transition-all duration-300 flex flex-col justify-between group"
             >
-              <div>
-                <div className="flex items-start justify-between gap-4 mb-3">
-                  <div>
-                    <span className="text-[11px] font-medium text-[#dfba73] tracking-widest uppercase block mb-1">
-                      {item.subcategory}
-                    </span>
-                    <h3 className="font-cinzel text-lg font-bold text-white group-hover:text-[#dfba73] transition-colors">
-                      {item.name}
-                    </h3>
-                  </div>
+              {item.image && (
+                <div className="relative h-48 overflow-hidden bg-neutral-900">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#121218] via-transparent to-transparent opacity-90" />
                   {item.badge && (
-                    <span className="text-[10px] font-medium tracking-wider text-[#dfba73] uppercase whitespace-nowrap pt-1">
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-[#dfba73]/40 text-[10px] font-semibold text-[#dfba73] uppercase tracking-wider">
                       {item.badge}
                     </span>
                   )}
                 </div>
+              )}
 
-                <p className="text-neutral-300/80 text-sm font-light leading-relaxed mb-6">
-                  {item.description}
-                </p>
-              </div>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-start justify-between gap-4 mb-2">
+                    <div>
+                      <span className="text-[11px] font-medium text-[#dfba73] tracking-widest uppercase block mb-1">
+                        {item.subcategory}
+                      </span>
+                      <h3 className="font-cinzel text-lg font-bold text-white group-hover:text-[#dfba73] transition-colors">
+                        {item.name}
+                      </h3>
+                    </div>
+                    {!item.image && item.badge && (
+                      <span className="text-[10px] font-medium tracking-wider text-[#dfba73] uppercase whitespace-nowrap pt-1">
+                        {item.badge}
+                      </span>
+                    )}
+                  </div>
 
-              <div className="pt-4 border-t border-neutral-800/80 flex items-center justify-between">
-                <span className="font-cinzel text-lg font-bold text-white tabular-nums">
-                  {item.price}
-                </span>
-                <span className="text-xs text-neutral-400 font-light">
-                  Dine-in & VIP Service
-                </span>
+                  <p className="text-neutral-300/80 text-sm font-light leading-relaxed mb-6">
+                    {item.description}
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-neutral-800/80 flex items-center justify-between">
+                  <span className="font-cinzel text-lg font-bold text-white tabular-nums">
+                    {item.price}
+                  </span>
+                  <span className="text-xs text-neutral-400 font-light">
+                    Dine-in & VIP Service
+                  </span>
+                </div>
               </div>
             </div>
           ))}
